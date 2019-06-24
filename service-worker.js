@@ -1,6 +1,7 @@
 var cacheName = 'cragios-01';
 var filesToCache = [
   '/',
+  '/favicon.ico',
   '/manifest.json',
   '/index.html',
   '/scripts/app.js',
