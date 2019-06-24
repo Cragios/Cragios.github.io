@@ -1,4 +1,4 @@
-var cacheName = 'school-app-01';
+var cacheName = 'cragios-01';
 var filesToCache = [
   '/',
   '/manifest.json',
