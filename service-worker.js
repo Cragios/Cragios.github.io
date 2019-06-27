@@ -4,6 +4,8 @@ var filesToCache = [
   '/favicon.ico',
   '/manifest.json',
   '/index.html',
+  '/styles/styles.css',
+  '/styles/fonts/Raleway.ttf',
   '/scripts/app.js',
   '/images/icons/icon-144.png',
   '/images/icons/icon-192.png',

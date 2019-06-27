@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/Raleway.ttf");
+}
