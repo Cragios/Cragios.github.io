@@ -10,12 +10,47 @@
     <link rel="stylesheet" href="styles/styles.css">
 
     <script defer src="scripts/app.js"></script>
-    
+
     <title>Home</title>
 </head>
 
 <body>
-    <p>Hello world!</p>
+    <nav>
+        <a href="https://cragios.github.io/Games/" target="_blank" rel="noopener noreferrer">games</a>
+        <a href="https://cragios.github.io/Miscellaneous/" target="_blank" rel="noopener noreferrer">miscellaneous</a>
+    </nav>
+
+    <main>
+        <header>
+            <div>
+                <button class="closed" id="menu-button">
+                    <div>
+                        <svg width="16" height="16" viewBox="0 0 20 20">
+                            <polyline points="2,18 10,10 2,2" />
+                        </svg>
+                        menu
+                    </div>
+                    <div hidden>
+                        <svg width="16" height="16" viewBox="0 0 20 20">
+                            <polyline points="10,18 2,10 10,2" />
+                        </svg>
+                        close
+                    </div>
+                </button>
+                <h1>welcome</h1>
+            </div>
+            <div>
+                <button id="contact-button">contact me</button>
+            </div>
+        </header>
+        <hr>
+        <fieldset>
+            <legend>links</legend>
+            <a href="http://github.com/Cragios" target="_blank" rel="noopener noreferrer">
+                <img src="images/GitHub_Logo.png" alt="GitHub" height="32px">
+            </a>
+        </fieldset>
+    </main>
 </body>
 
 </html>

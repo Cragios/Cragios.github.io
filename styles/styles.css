@@ -1,3 +1,7 @@
+[hidden] {
+    display: none !important;
+}
+
 * {
     box-sizing: border-box;
     outline: none;
@@ -5,6 +9,141 @@
     margin: 0;
     padding: 0;
     font-family: "Raleway";
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+nav {
+    background: black;
+    color: white;
+    min-height: 100vh;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+nav * {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    padding: 8px;
+    border-left: 0px solid white;
+    transition: 0.1s linear;
+}
+
+nav a:hover {
+    border-left: 4px solid white;
+}
+
+main {
+    background: white;
+    width: 100%;
+    padding: 8px;
+}
+
+main header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main header>div {
+    display: flex;
+    align-items: center
+}
+
+main header #menu-button {
+    margin-left: -16px;
+    padding: 16px;
+    border: none;
+    border-radius: 0 32px 32px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.5s, margin 0.5s, padding 0.5s;
+    fill: none;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+main header #menu-button:hover {
+    fill: currentColor;
+    stroke-width: 0;
+    transform: translateX(8px);
+}
+
+main header #menu-button div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main header .closed {
+    background: none;
+    color: black;
+    stroke: black;
+}
+
+main header .closed:hover {
+    background: black;
+    color: white;
+}
+
+main header .opened {
+    background: black;
+    color: white;
+    stroke: white;
+}
+
+main header h1 {
+    margin-left: 16px;
+}
+
+main header #contact-div {
+    height: 0px;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    right: 8px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    transition: 3s;
+}
+
+main header #contact-div:hover {
+    height: 128px;
+}
+
+main header #contact-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main header #contact-button:hover {
+    font-weight: bold;
+}
+
+main hr {
+    margin: 4px;
+    border: 1px solid black;
+}
+
+main fieldset {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 4px;
+}
+
+main fieldset legend {
+    padding: 4px;
 }
 
 @font-face {
